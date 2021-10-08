@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>image gallary implementation wit border radious propertiess</h1>
+    <img src="/images/p1.jpg" alt="Image Background" height="300" width="200">
+    <img src="/images/bc.jpg" alt="Image Background" height="300" width="200">
+    <img src="/images/p1.jpg" alt="Image Background" height="300" width="200">
+    <img src="/images/bc.jpg" alt="Image Background" height="300" width="200">
+    
+    
+    <div class="PolaroidPostcard">
+        <img src="/images/bc.jpg" alt="background image" style="width:100%">
+        <div class="container">
+            <h3>breath taking view from space</h3>
+        </div>
+    </div>
+    
+    
+    <style>
+        
+        img{
+            border-radius: 25px;
+            box-sizing: content-box;
+            padding:15px;
+            margin-left:auto ;
+            margin-right: auto;
+            opacity:0.8;
+        }
+
+        img:hover{
+            box-shadow: 1px 2px rgb(187, 40, 187);
+        }
+        
+        div.PolaroidPostcard{
+            height:250px;
+            width:250px;
+            margin-bottom:15%;
+            background-color: rgb(15, 94, 139);
+            box-shadow: 2px 2px rgb(15, 131, 77);
+            text-align: center;
+
+        }
+        div.container{
+            width:80%;
+
+        }
+
+    </style>
+</body>
+
+</html>

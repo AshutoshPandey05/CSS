@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Css based animation</h1>
+    <div>animation</div>
+    <p> Animating color of the shape</p>
+
+
+    <style>
+        div{
+            height: 240;
+            width: 240;
+            animation-name: example;
+            animation-duration: 3s;
+            background-color: #f32c2c;
+            animation-timing-function: step-start;
+
+        }
+        @keyframes example{
+            0% {
+                background-color: black;
+                height: 100px;
+            }
+            25% {
+                background-color: rgb(47, 175, 30);
+                width:180px
+            }
+            50% {
+                background: rgb(226, 26, 209);
+                height:220px;
+            }
+            100% {
+                background-color: rgb(218, 119, 28);
+                width:220px
+            }
+        }
+    </style>
+
+</body>
+
+</html>
