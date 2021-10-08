@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="Numbers"> Counting Numbers</h2>
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startcount()">Start Count</button> 
+<button onclick="stopcount()">Stop Count</button>
+
+<script>
+let w;
+
+function startcount() {
+  if(typeof(w) == "undefined") {
+    w = new count ("democount.js");
+  }
+  w.onmessage = function(event) {
+    document.getElementById("Numbers").innerHTML = event.data;
+  };
+}
+
+function stopcount() { 
+  w.terminate();
+  w = undefined;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Gelocation</h2>
+
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.getElementById("demo");
+
+        function getLocation() {
+            try {
+                navigator.geolocation.getCurrentPosition(showPosition);
+
+            } catch {
+                x.innerHTML = err;
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        
+        }
+        function showPosition(position) {
+  let latlon = position.coords.latitude + "," + position.coords.longitude;
+
+  let img_url = "https://www.google.com/maps/@25.9040553,85.8023085,8z?center=
+  "+latlon+"&zoom=14&size:400*300&sensor=false & key=YOUR_KEY";
+
+  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+       
+    </script>
+
+</body>
+
+</html>
